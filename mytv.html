@@ -1,0 +1,256 @@
+!DOCTYPE html>
+<html dir='ltr' lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<!--<head>--><head>    
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+<style>
+*{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;outline:none;-webkit-border:0;-moz-border:0;border:0;cursor:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;}html,body{width:100vw;width:100svw;height:100vh;height:100svh;background:#000;overflow:hidden;}video{width:100vw;width:100svw;height:100vh;height:100svh;overflow:hidden}.theme-blue .shaka-controls-button-panel .material-icons-round{color:#eee}.theme-blue .shaka-overflow-menu,.theme-blue .shaka-settings-menu{background:rgba(0,0,0,0.8);border-radius:4px;}.theme-blue .shaka-overflow-menu span+span{font-size:80%;color:#fff;padding-top:2px}.theme-blue .shaka-overflow-menu button,.theme-blue .shaka-settings-menu button{color:#fff;transition:all .2s linear;}.theme-blue .shaka-overflow-menu button:hover,.theme-blue .shaka-settings-menu button:hover{background:#3275e4;cursor:auto}
+@charset "UTF-8";*{font-family:'Open Sans',Arial;margin:0;padding:0}body{background-color:#000;font-size:14px}li,ul{list-style:none}a{text-decoration:none}img{border:none}.kanallarliste{width:70px;position:absolute;top:0;right:0;padding:5px 0 5px 5px;background-color:#3a1d7f;color:#fff}.kanallarliste>span{display:block;height:22px}.kanallarliste>b{margin-left:5px}#kanallarliste{height:210px;overflow-y:scroll;overflow-x:hidden;background-color:#512da8}#kanallarliste::-webkit-scrollbar{width:9px;background-color:#432291}#kanallarliste::-webkit-scrollbar-track{padding:10px 0;border-radius:5px}#kanallarliste::-webkit-scrollbar-thumb{background:#d33b8a;border-radius:10px}.kanallarliste ul{font-size:12px;margin-top:5px;color:#2d126d;font-weight:300}.kanallarliste ul li{padding-left:6px;font-size:12px}.kanallarliste ul li:nth-child(odd){background-color:#432291}.kanallarliste ul li a{color:#fff;font-weight:500;display:block;padding:3px 0;white-space:nowrap;text-overflow:ellipsis;width:100%}.crot,.crot a{overflow:hidden}.crot,.crot a,.crot li{width:100%;box-sizing:border-box;display:flex}.button,.crot a,.crot li{text-align:center;position:relative}.button,.crot,.crot a,.crot li{position:relative}.crot{clear:both;background:#000;max-height:13px;padding:0 2px;margin:0;list-style:none}.crot li{margin:2px;float:right;z-index:3;flex:1;align-items:center;justify-content:center}.crot a{background:#35a2f6;font-size:16px;cursor:pointer;padding:5px;border:0;text-shadow:0 1px 1px rgba(0,0,0,.3);box-shadow:0 0 0 #d6d6d6;border-radius:1px;height:43px;flex:1;font-weight:600;align-items:center;justify-content:center;color:#fff!important;transition:.3s cubic-bezier(.68, -.55, .27, 1.55)}.crot a.active,.crot a:hover{background:#0d1655;color:#fff!important}.button{background:#0d1655;cursor:pointer;font-size:14px;float:left;display:block;border-radius:2px;height:25px;line-height:22px;text-shadow:0 1px 1px #000;color:#fff;padding:0 10px;font-family:sans-serif;font-weight:700;z-index:99} .bitmovinplayer-ad-container, .bitmovinplayer-container{direction:ltr;}.bmpui-ui-watermark{display: none; !important}
+/* Gaya untuk button aktif */
+ul.crot li button.active {
+position: fixed;
+top: 5px;
+background-color: #063387;
+color: white;
+border: none;
+padding: 1px 5px;
+font-size: 14px;
+font-weight: normal;
+border-radius: 0px;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.2s;
+}
+ul.crot li button:not(.active) {
+position: fixed;
+top: 5px;
+background-color: #0b91cf;
+color: white;
+border: none;
+padding: 2px 5px;
+font-size: 14px;
+font-weight: normal;
+border-radius: 0px;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.2s;
+}
+ul.crot li button:hover {
+background-color: #0056b3;
+}
+ul.crot li button:active {
+background-color: #0d1655;
+}
+
+--></style>
+<script>
+    
+<script src='https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/dash-shaka-playback@latest/dist/dash-shaka-playback.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/shaka-player/4.3.8/shaka-player.ui.js'></script>
+<link href='https://ajax.googleapis.com/ajax/libs/shaka-player/4.3.8/controls.css' rel='stylesheet' type='text/css'/>
+  
+  
+    </head>
+<!--<body class='is-post'>--><body>    
+    <!-- body class -->
+<!-- wrapper -->
+<div id='wrapper'>
+<div class='bellow-header-widget no-items section' id='bellow-header-widget'>
+</div>
+<div class='bellow-header-widget2 no-items section' id='bellow-header-widget2'>
+</div>
+<!-- post -->
+<div id='post-wrapper'>
+<div class='post-container'>
+<div class='above-post-widget no-items section' id='above-post-widget'></div>
+<div class='main section' id='main'><div class='widget Blog' data-version='2' id='Blog1'>
+<div class='blog-posts'>
+<div class='post-outer'>
+<article class='post'>
+<div>
+<div class='post-body entry-content' id='post-body-9045044398824084957'>
+<script async='async' src='//cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
+<div class='post-body-artikel'>
+
+    <style>
+        #croOt {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 5px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            
+           
+        }
+
+        #croOt .nav-item {
+            display: inline-block;
+        }
+
+        #croOt .nav1-link {
+            text-decoration: none;
+            color: white;
+        }
+
+        #croOt button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #croOt button:hover {
+            background-color: #0056b3;
+        }
+
+        #croOt button.active {
+            background-color: #28a745;
+        }
+
+        [data-shaka-player-container] {
+            width: 100%;
+            height: 100%;            
+            aspect-ratio: 16/9;
+           
+        }
+    </style>
+
+  <!-- Navigation -->
+    <ul id="croOt">
+        <li class="nav-item">
+            <button class="nav1-link" data-value="https://linearjitp-playback.astro.com.my/dash-wv/linear/809/default_primary.mpd"
+                    data-fallback="https://tonton-live-switch-ssar.akamaized.net/stream-tv3/master.m3u8?bpkio_serviceid=6c0958d82a830a02ca0936d9cfab8311&bpkio_sessionid=10a3a33c74-07d12acb-7edc-4604-90f6-11604b84a384&category=all">TV3</button>
+        </li>
+                    <li class="nav-item">
+            <button class="nav1-link" data-value="https://linearjitp-playback.astro.com.my/dash-wv/linear/705/default.mpd"
+                    data-fallback="https://linearjitp-playback.astro.com.my/dash-wv/linear/705/default.mpd">TV9</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav1-link" data-value="https://linearjitp-playback.astro.com.my/dash-wv/linear/911/default.mpd"
+                    data-fallback="https://linearjitp-playback.astro.com.my/dash-wv/linear/911/default.mpd">8TV</button>
+        </li>
+         
+      
+              <li class="nav-item">
+            <button class="nav1-link" data-value="https://linearjitp-playback.astro.com.my/dash-wv/linear/707/default.mpd"
+                    data-fallback="https://linearjitp-playback.astro.com.my/dash-wv/linear/707/default.mpd">DIDIKTV</button>
+        </li>
+      
+    </ul>
+
+    <!-- Player Container -->
+    <center>
+        <div data-shaka-player-container>
+            <video autoplay data-shaka-player id="video" style="width: 100%; height: 100%;"></video>
+        </div>
+    </center>
+
+    <script>
+        async function initPlayer(source, fallback) {
+            const video = document.getElementById('video');
+            const ui = video['ui'];
+            const controls = ui.getControls();
+            const player = controls.getPlayer();
+
+            // Configure ClearKey DRM
+            player.configure({
+                drm: {
+                    clearKeys: {
+                         'e509735b5f89750d42ace2410ead7210': '1726083509d570b5de4730ab9f338cc3',
+                         '27828727f0a3a0b4fbc668378ccf8c10': '958e9cb7389e20948de5a542d2729ecf',
+                         '0cb7980e9d1d8957f9a293ed96342410': '11da1ad368d0cacffe4824b6b35e22b7',
+                         'O8Pw5Riu2S6AqYEY5bwsEA': 'X842T7xEmYVll7GalvRGSA'
+                      
+                    }
+                }
+            });
+
+            player.addEventListener('error', (errorEvent) => {
+                console.error('Player error:', errorEvent.detail);
+                if (fallback) {
+                    console.log('Loading fallback source...');
+                    player.load(fallback).catch(console.error);
+                }
+            });
+
+            try {
+                console.log('Loading source:', source);
+                await player.load(source);
+                console.log('The video has now been loaded!');
+            } catch (error) {
+                console.error('Error while loading source:', error);
+                if (fallback) {
+                    console.log('Loading fallback source...');
+                    await player.load(fallback).catch(console.error);
+                }
+            }
+        }
+
+        // Initialize with default source
+        document.addEventListener('shaka-ui-loaded', () => {
+            const defaultSource = 'https://linearjitp-playback.astro.com.my/dash-wv/linear/809/default_primary.mpd';
+            const fallbackSource = 'https://linearjitp-playback.astro.com.my/dash-wv/linear/809/default_primary.mpd';
+            initPlayer(defaultSource, fallbackSource);
+        });
+
+        // Button Click Handlers
+        document.querySelectorAll('.nav1-link').forEach((button) => {
+            button.addEventListener('click', () => {
+                const source = button.getAttribute('data-value');
+                const fallback = button.getAttribute('data-fallback');
+
+                // Reset Active Button
+                document.querySelectorAll('.nav1-link').forEach((btn) => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                // Load new source
+                initPlayer(source, fallback);
+            });
+        });
+
+        document.addEventListener('shaka-ui-load-failed', () => {
+            console.error('Unable to load the Shaka Player UI library!');
+        });
+    </script>
+
+
+
+
+</div>
+</div>
+</div>
+<section class='comments comments-non-threaded' data-num-comments='0' id='comments'>
+<a name='comments'></a>
+</section>
+</article>
+</div>
+</div>
+<div class='blog-pager' id='blog-pager'>
+</div>
+</div></div>
+<div class='matched-content no-items section' id='matched-content'></div>
+</div>
+</div>
+<!-- sidebar -->
+<aside id='sidebar-wrapper'>
+<div class='sidebar no-items section' id='sidebar'>
+</div>
+<div class='sidebar-sticky no-items section' id='sidebar-sticky'></div>
+</aside>
+</div>
+<div class='sticky-stop'></div>
+<div class='navbar no-items section' id='navbar'></div>
+<div class='custom-javascript-footer no-items section' id='custom-javascript-footer'>
+</div>
+
+  </body>
+</html>
