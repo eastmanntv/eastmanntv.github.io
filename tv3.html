@@ -1,0 +1,61 @@
+
+<html>
+<script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@clappr/hlsjs-playback@latest/dist/hlsjs-playback.min.js"></script>
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({
+      source: "https://tonton-live-switch-ssar.akamaized.net/stream-tv3/master.m3u8?bpkio_serviceid=6c0958d82a830a02ca0936d9cfab8311d0ccd3f7e&txTime=6767C700",
+      width: "100%",
+      height: "600px",
+      autoPlay: true,
+      parentId: "#player" ,
+      poster :'',
+      plugins: [DashShakaPlayback, LevelSelector, HlsjsPlayback],
+    levelSelectorConfig: {
+      title: "Quality",
+      labels: {
+        3: "HD", //700kbps
+        2: "High", //500kbps
+        1: "Med", //240kbps
+        0: "Low" //120kbps
+      },
+      labelCallback: function (playbackLevel, customLabel) {
+        return customLabel + playbackLevel.level.height + "p"; //High 720p
+      }
+    },
+      shakaConfiguration: {
+            drm: {
+                clearKeys: {
+                    // Tambahkan kunci ClearKey Anda di sini
+                       //'e6ed3fdf6e9f491d9ead109fc0b00cfc': '3bc6c45722eb5fa7b343de9bffc4f7c7',
+                       //  '27828727f0a3a0b4fbc668378ccf8c10': '958e9cb7389e20948de5a542d2729ecf',
+                       //  '0cb7980e9d1d8957f9a293ed96342410': '11da1ad368d0cacffe4824b6b35e22b7'
+                }
+            }
+        }
+    });
+    function onFullScreenChange() {
+        if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
+            // Entering fullscreen mode
+            if (screen.orientation && screen.orientation.lock) {
+                screen.orientation.lock('landscape');
+            }
+        } else {
+            // Exiting fullscreen mode
+            if (screen.orientation && screen.orientation.unlock) {
+                screen.orientation.unlock();
+            }
+        }
+    }
+
+    document.addEventListener('fullscreenchange', onFullScreenChange);
+    document.addEventListener('webkitfullscreenchange', onFullScreenChange);
+    document.addEventListener('mozfullscreenchange', onFullScreenChange);
+    document.addEventListener('MSFullscreenChange', onFullScreenChange);
+  </script>
+</html>
