@@ -1,7 +1,7 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=4000000
-https://linear-627.frequency.stream/mt/plex/627/hls/master/playlist_1280x720_215030__494861.ts
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/court-sports-network/playlist.m3u8
 #http://fl2.moveonjoy.com/DISNEY_JR/tracks-v1a1/mono.m3u8
 #http://203.205.136.13/play.cbalive.weibisai.com/live/3836513031525061_AiSD.m3u8?txSecret=92e0168ae2b9d96bb968c035a1df1f05&txTime=67CAB590
 
