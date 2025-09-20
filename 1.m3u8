@@ -1,1 +1,14 @@
-#EXTM3U #EXT-X-VERSION:3 #EXT-X-TARGETDURATION:4 #EXT-X-MEDIA-SEQUENCE:1741873067 #EXTINF:4.000000, https://4gtvfree-cds.cdn.hinet.net/live/pool/4gtv-live409/4gtv-live-mid/10801741873067.ts?token=n7hx488qKH1WYFs3ZyDMSg&expires=1741956612&token1=10lWw9xolrIgvYQyXk5L8w&expires1=1741956612 #EXTINF:4.000000, https://4gtvfree-cds.cdn.hinet.net/live/pool/4gtv-live409/4gtv-live-mid/10801741873068.ts?token=n7hx488qKH1WYFs3ZyDMSg&expires=1741956612&token1=10lWw9xolrIgvYQyXk5L8w&expires1=1741956612 #EXTINF:4.000000, https://4gtvfree-cds.cdn.hinet.net/live/pool/4gtv-live409/4gtv-live-mid/10801741873069.ts?token=n7hx488qKH1WYFs3ZyDMSg&expires=1741956612&token1=10lWw9xolrIgvYQyXk5L8w&expires1=1741956612 #EXTINF:4.000000, https://4gtvfree-cds.cdn.hinet.net/live/pool/4gtv-live409/4gtv-live-mid/10801741873070.ts?token=n7hx488qKH1WYFs3ZyDMSg&expires=1741956612&token1=10lWw9xolrIgvYQyXk5L8w&expires1=1741956612 #EXTINF:4.000000, https://4gtvfree-cds.cdn.hinet.net/live/pool/4gtv-live409/4gtv-live-mid/10801741873071.ts?token=n7hx488qKH1WYFs3ZyDMSg&expires=1741956612&token1=10lWw9xolrIgvYQyXk5L8w&expires1=1741956612 #EXTINF:4.000000, https://4gtvfree-cds.cdn.hinet.net/live/pool/4gtv-live409/4gtv-live-mid/10801741873072.ts?token=n7hx488qKH1WYFs3ZyDMSg&expires=1741956612&token1=10lWw9xolrIgvYQyXk5L8w&expires1=1741956612 #EXTINF:4.000000, https://4gtvfree-cds.cdn.hinet.net/live/pool/4gtv-live409/4gtv-live-mid/10801741873073.ts?token=n7hx488qKH1WYFs3ZyDMSg&expires=1741956612&token1=10lWw9xolrIgvYQyXk5L8w&expires1=1741956612 #EXTINF:4.000000, https://4gtvfree-cds.cdn.hinet.net/live/pool/4gtv-live409/4gtv-live-mid/10801741873074.ts?token=n7hx488qKH1WYFs3ZyDMSg&expires=1741956612&token1=10lWw9xolrIgvYQyXk5L8w&expires1=1741956612 #EXTINF:4.000000, https://4gtvfree-cds.cdn.hinet.net/live/pool/4gtv-live409/4gtv-live-mid/10801741873075.ts?token=n7hx488qKH1WYFs3ZyDMSg&expires=1741956612&token1=10lWw9xolrIgvYQyXk5L8w&expires1=1741956612 #EXTINF:4.000000, https://4gtvfree-cds.cdn.hinet.net/live/pool/4gtv-live409/4gtv-live-mid/10801741873076.ts?token=n7hx488qKH1WYFs3ZyDMSg&expires=1741956612&token1=10lWw9xolrIgvYQyXk5L8w&expires1=1741956612
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:1758304373
+#EXTINF:10.000000,
+https://www.kds.tw/wp-admin/admin-ajax.php?action=xhzb_hls_proxy&id=AzedsDImbrAH6kPKE1n3Ay1ibaRgCZA5&k=fb1f5aa39d34
+#EXTINF:10.000000,
+https://www.kds.tw/wp-admin/admin-ajax.php?action=xhzb_hls_proxy&id=AzedsDImbrAH6kPKE1n3Ay1ibaRgCZA5&k=15c0aa867232
+#EXTINF:10.000000,
+https://www.kds.tw/wp-admin/admin-ajax.php?action=xhzb_hls_proxy&id=AzedsDImbrAH6kPKE1n3Ay1ibaRgCZA5&k=3c790d434f73
+#EXTINF:10.000000,
+https://www.kds.tw/wp-admin/admin-ajax.php?action=xhzb_hls_proxy&id=AzedsDImbrAH6kPKE1n3Ay1ibaRgCZA5&k=cbcbfeef889d
+#EXTINF:10.000000,
+https://www.kds.tw/wp-admin/admin-ajax.php?action=xhzb_hls_proxy&id=AzedsDImbrAH6kPKE1n3Ay1ibaRgCZA5&k=99bbf3b3f891
