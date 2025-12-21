@@ -1,0 +1,72 @@
+// Source - https://stackoverflow.com/q
+// Posted by Antonio James, modified by community. See post 'Timeline' for change history
+// Retrieved 2025-12-21, License - CC BY-SA 3.0
+
+<html>
+<head>
+ <meta charset="utf-8"/>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main1012018.css" rel="stylesheet" type="text/css">
+
+</head> 
+
+<body>  
+ <div id="page" >
+
+ <!--/LOGO PANEL/-->    
+ <div id="logo" >
+ <img class="name" background-color="transparent" height="20px"  alt=""/>
+</div>
+
+
+<h3>Monitor</h3>
+  <p>The fixed Video Player is always randomly playing one of the videos from the Video tab below. If you click one of the buttons below it changes the content for that tab</p>
+
+<div id="controls"></div>
+<div id="Profile" class="tabcontent"></div>
+
+ <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'OnNow')">On Now</button>
+  <button class="tablinks" onclick="openCity(event, 'Beans')">Videos</button>
+ </div>
+
+<div id="menu2">
+ <div id="OnNow" class="tabcontent">
+  <h3>OnNow</h3>
+  <p>Displays the title and description of what is actively playing in the video player.</p>
+</div>
+
+<div id="Beans" class="tabcontent">
+  <h3>Video</h3>
+  <p>This tab contains rows each with videos that corresponds to that row that I can scroll through like Netflix/Amazon/Hulu. When you select a video/push play then the above video player is interuppted and plays the video. Each Row is a following Genre: Newest, Top 10(you follow), Friend's Channel, Int'l </p>
+</div>  
+</div>  
+
+<script>
+function openCity(evt, cityName, skipClass) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+  tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablinks");
+ if(!skipClass) {
+   for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+   }
+   }
+
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+  }
+
+  $('.link').click(function(event){
+  event.preventDefault();
+  var url =$(this).html();
+  $("#videoDiv").html('<iframe width="400" height="400" src="'+url+'?wmode=transparent" frameborder="0" allowfullscreen></iframe>');
+
+ })
+ </script>
+ </body>
+ </html> 
